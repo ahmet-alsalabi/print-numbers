@@ -19,10 +19,29 @@ function dataSave() {
 
 
     for (let i = firInpValue; i <= secInpValue; i++) {
-        console.log(i);
+       // console.log(i);
 
     }
 
     document.getElementById("result").innerHTML = resultString;
 
 }
+function numbers(number1,number2){
+    let min,max;
+    if(number1>number2){
+        max=number1;
+        min=number2;   
+    }else{
+        max=number2;
+        min=number1;
+    }
+    let myArray = [];
+    for(let i=min; i <= max; i++){
+        console.log(i);
+        
+        myArray.push(i);
+    }
+    return myArray;
+
+}
+//console.log(numbers(12,6));
